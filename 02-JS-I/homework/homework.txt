@@ -1,0 +1,63 @@
+Variables
+
+Una variable es una forma de guardar el valor de algo para usar más tarde, para crear una variable en JavaScript usamos la palabra clave VAR, seguida de un espacio y el nombre de la variable. Ademas de reconocer una variable, podemos darle un valor usando el signo "=".
+
+Strings
+
+Son bloques de textos, siempre se definiran entre comillas, ya sean simples o dobles. Cualquier texto entre comillas es una cadena o string.
+ej: VAR nombrePerro = 'Firulais';
+
+Funciones (argumentos, return)
+
+Las funciones son una parte muy importante de todo lenguaje de programacion. Cuando tenemos un conjunto de variables, necesitamos funciones para calcularlas, cambiarlas, hacer algo con ellas. Hay 3 formas en que podemos construir una función.
+function miFunction() {}
+var otraFuncion = function (){};
+var y0tra = () => {};
+
+Una función comenzara con la palabra clave function, esto le dice a loq ue sea que esté ejecutando tu programa que lo que sigue es una función y que debe tratarse como tal. Luego viene el nombre de la función (que describa lo que hace). Despues se pone un paréntesis abierto y uno cerrado. Finalmente, abra y cierre los corchetes. Entre estos corchetes es donde irá todo nuestro codigo a poner en marcha.
+Ej: fucntion logHola() {
+     console.log('hola');
+}
+logHola();
+
+Declaramos una función logHola y la configuramos en console.log'hello'. Para ejecutar esta función, necesitamos escribir el nombre el nombre y los paréntesis. Esta es la sintaxis para ejecutar una función, siempre necesita parentesis para ejecurtarse.
+
+Cuando se puede ejecutar una función básica, vamos a comenzar a pasarle argumentos.
+Ej: function logHola(nombre){
+      console.log('Hola, ' + nombre);
+}
+logHola ('Martin') 
+
+Si agregamos una variable a los paréntesis cuando declaramos la función, podemos usar esta variable dentre de nuestra función. Iniciamos el valor de esta variable pasándola a la función cuando la llamamos. Entonces en esta caso nombre = 'Martin'. Tambien podemos pasar otras variables a esto:
+Ej: function logHola(nombre) {
+      console.log('Hola, ${nombre}');
+}
+
+VAR miNombre = 'Antonio';
+logHola (miNombre);
+
+Podemos agregar mas argumentos poniendo una coma entre ellos:
+
+fuction sumarDosNumeros(a, b) {
+    VAR suma = a + b;
+    return suma;
+}
+
+sumarDosNumeros(1,5);//6
+
+Declaraciones if
+
+Utilizamos la palabra clave if, y entre paréntesis la condición que se comprobará si es verdadera o falsa para ejecutar o no la acción que va a continuación.
+Ej: function puedeManejar(edad){
+       if(edad >18){
+         return true;
+}
+    return false;
+
+}
+
+    puedeManejar(22); // true
+
+Valores booleanos (true, false)
+
+Una variable booleana es una variable que sólo puede tomar dos posibles valores: True (verdadero) o False (falso). En general los elementos nulos o vacíos se consideran False y el resto se consideran True.
